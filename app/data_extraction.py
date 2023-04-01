@@ -22,7 +22,7 @@ def extract_buy_properties_page() -> List[str]:
     return detail_page_urls
 
 def extract_detail_page(list:List[str]):
-    with open('housing.csv', 'w', encoding='utf8', newline='') as f:
+    with open('output/housing.csv', 'w', encoding='utf8', newline='') as f:
         thewriter = writer(f)
         header = ['Type', 'Location', 'Price', 'Area','Bed Rooms','Bath Rooms']
         thewriter.writerow(header)
